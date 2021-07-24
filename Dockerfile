@@ -1,3 +1,4 @@
 FROM alpine
+WORKDIR /tmp
 RUN apk add curl
-RUN curl https://github-production-release-asset-2e65be.s3.amazonaws.com/7270538/5d737580-91d9-11ea-88c3-73ba09b10d81\?X-Amz-Algorithm\=AWS4-HMAC-SHA256\&X-Amz-Credential\=AKIAIWNJYAX4CSVEH53A%2F20200612%2Fus-east-1%2Fs3%2Faws4_request\&X-Amz-Date\=20200612T045029Z\&X-Amz-Expires\=300\&X-Amz-Signature\=f9ce84ef99a6423bbeee30dc61ec6bc50ba52d4668b5bc0ca40afa9019d69dc2\&X-Amz-SignedHeaders\=host\&actor_id\=16110702\&repo_id\=7270538\&response-content-disposition\=attachment%3B%20filename%3Danki-2.1.26-mac.dmg\&response-content-type\=application%2Foctet-stream -o a.dmg
+RUN curl https://github.com/alibaba/nacos/releases/download/2.0.1/nacos-server-2.0.1.zip nacos.zip
